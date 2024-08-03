@@ -1,0 +1,143 @@
+body,
+html {
+  padding: 0;
+  margin: 60px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  background-color: var(--bg-color);
+
+  line-height: 120%;
+}
+
+:root {
+  --primary-color: #682773;
+  --secondary-color: #fece23;
+  --success-color: #55adc9;
+  --info-color: #de0404;
+  --bg-color: #1a1717;
+  --text1-color: #fdfdfd;
+  --text2-color: #0b0101;
+}
+
+#content {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 30px;
+  width: 50%;
+  color: var(--text1-color);
+  margin: 20px auto;
+}
+
+#content p {
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.container {
+  background-color: var(--success-color);
+  height: 326px;
+  width: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.container .text1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text2-color);
+}
+
+.container .text2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text2-color);
+}
+
+.red {
+  color: var(--info-color);
+}
+
+.yellow {
+  color: var(--secondary-color);
+}
+
+input {
+  border: 3px solid var(--bg-color);
+  font-size: 16px;
+  width: 100%;
+  height: 44px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background-color: var(--success-color);
+}
+
+input:hover {
+  border: 2px solid var(--text2-color);
+  background-color: var(--success-color);
+}
+
+button {
+  border: 4px solid var(--secondary-color);
+  border-radius: 5px;
+  width: 89px;
+  height: 39px;
+  color: var(--text2-color);
+  font-weight: bold;
+}
+
+button:hover {
+  color: var(--info-color);
+  border: 4px solid var(--info-color);
+}
+
+@media (max-width: 768px) {
+  #content {
+    width: 40%;
+  }
+
+  #content p {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 40%;
+    gap: 10px;
+  }
+
+  .container .text1 {
+    font-size: 20px;
+  }
+
+  .container .text2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #content {
+    width: 30%;
+  }
+
+  #content p {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 30%;
+    gap: 0;
+  }
+  .container .text1 {
+    font-size: 16px;
+  }
+
+  .container .text2 {
+    font-size: 14px;
+  }
+}
